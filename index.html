@@ -135,118 +135,299 @@
     </header>
 
     <!-- Hero Section -->
-    <main class="bg-[#eaeaea] py-10 px-4 md:px-6 overflow-hidden">
-      <div
-        class="container mx-auto max-w-[1200px] flex flex-col md:flex-row items-center gap-8"
-      >
-        <div class="md:w-1/2 space-y-4 animate-fadeInLeft">
-          <h1 class="text-5xl md:text-7xl font-bold leading-none text-black">
-            3=2
-          </h1>
-          <p class="text-lg md:text-5xl font-normal text-black">
-            Закажи три футболки,<br />а заплати только за две
-          </p>
-          <button
-            class="mt-6 px-6 py-3 rounded-full transition-colors duration-300 cursor-pointer text-lg font-medium animate-fadeInUp"
-            style="background: #c4c4c4"
-            onmouseover="this.style.background='#a9a9a9';"
-            onmouseout="this.style.background='#c4c4c4';"
+    <main>
+      <section class="bg-[#eaeaea] py-10 px-4 md:px-6 overflow-hidden">
+        <div
+          class="container mx-auto max-w-[1200px] flex flex-col md:flex-row items-center gap-8"
+        >
+          <div class="md:w-1/2 space-y-4 animate-fadeInLeft">
+            <h1 class="text-5xl md:text-7xl font-bold leading-none text-black">
+              3=2
+            </h1>
+            <p class="text-lg md:text-5xl font-normal text-black">
+              Закажи три футболки,<br />а заплати только за две
+            </p>
+            <button
+              class="mt-6 px-6 py-3 rounded-full transition-colors duration-300 cursor-pointer text-lg font-medium animate-fadeInUp"
+              style="background: #c4c4c4"
+              onmouseover="this.style.background='#a9a9a9';"
+              onmouseout="this.style.background='#c4c4c4';"
+            >
+              Перейти в каталог
+            </button>
+          </div>
+
+          <div
+            class="md:w-1/2 flex flex-col items-center relative animate-fadeInDown"
           >
-            Перейти в каталог
-          </button>
+            <div
+              class="relative w-full max-w-md h-80 flex items-end justify-center"
+            >
+              <div class="absolute left-0 top-6 z-0 w-40 md:w-52 h-auto">
+                <img
+                  src="./img/black-shirt.svg"
+                  alt="Черная футболка"
+                  class="w-full h-auto object-cover rounded-lg shadow-sm"
+                />
+              </div>
+
+              <div class="absolute right-0 top-6 z-0 w-40 md:w-52 h-auto">
+                <img
+                  src="./img/black-shirt.svg"
+                  alt="Черная футболка"
+                  class="w-full h-auto object-cover rounded-lg shadow-sm"
+                />
+              </div>
+
+              <div
+                class="absolute left-1/2 transform -translate-x-1/2 bottom-0 z-10 w-48 md:w-60 h-auto"
+              >
+                <img
+                  src="./img/white-shirt.svg"
+                  alt="Белая футболка"
+                  class="w-full h-auto object-cover rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+
+            <p class="text-xs text-gray-500 mt-4">
+              *акция действительна до 03.05.22
+            </p>
+          </div>
         </div>
 
-        <div
-          class="md:w-1/2 flex flex-col items-center relative animate-fadeInDown"
-        >
+        <div class="flex justify-center mt-6 space-x-2 animate-fadeInUp">
           <div
-            class="relative w-full max-w-md h-80 flex items-end justify-center"
+            class="w-3 h-3 bg-white border border-gray-400 rounded-full"
+          ></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+          <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+        </div>
+
+        <style>
+          @keyframes fadeInLeft {
+            from {
+              opacity: 0;
+              transform: translateX(-50px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(40px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes fadeInDown {
+            from {
+              opacity: 0;
+              transform: translateY(-40px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeInLeft {
+            animation: fadeInLeft 1s ease-out forwards;
+          }
+
+          .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+          }
+
+          .animate-fadeInDown {
+            animation: fadeInDown 1s ease-out forwards;
+          }
+        </style>
+      </section>
+
+      <!-- Products Section -->
+      <section class="py-10 px-4 md:px-6">
+        <div class="container mx-auto max-w-[1200px]">
+          <!-- Section Title -->
+          <h2
+            class="text-2xl md:text-3xl font-bold mb-10 opacity-0 animate-fadeDown"
           >
-            <div class="absolute left-0 top-6 z-0 w-40 md:w-52 h-auto">
-              <img
-                src="./img/image 2 (2).svg"
-                alt="Черная футболка"
-                class="w-full h-auto object-cover rounded-lg shadow-sm"
-              />
-            </div>
+            Что вы ищите?
+          </h2>
 
-            <div class="absolute right-0 top-6 z-0 w-40 md:w-52 h-auto">
-              <img
-                src="./img/image 4 (2).svg"
-                alt="Черная футболка"
-                class="w-full h-auto object-cover rounded-lg shadow-sm"
-              />
-            </div>
-
+          <!-- Grid of 6 Cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
+          >
+            <!-- Card 1 -->
             <div
-              class="absolute left-1/2 transform -translate-x-1/2 bottom-0 z-10 w-48 md:w-60 h-auto"
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 0.2s"
             >
+              <h3 class="text-xl font-bold text-gray-800">Верх</h3>
+              <p class="text-sm text-gray-500 mb-4">Футболки, майки</p>
               <img
-                src="./img/image 3 (2).svg"
-                alt="Белая футболка"
-                class="w-full h-auto object-cover rounded-lg shadow-lg"
+                src="./img/white-shirt.svg"
+                alt="Футболка"
+                class="w-full h-40 object-contain rounded-lg"
+              />
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 0.4s"
+            >
+              <h3 class="text-xl font-bold text-gray-800">Низ</h3>
+              <p class="text-sm text-gray-500 mb-4">Велосипедки, леггинсы</p>
+              <img
+                src="./img/pants.svg"
+                alt="Леггинсы"
+                class="w-full h-40 object-contain rounded-lg"
+              />
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 0.6s"
+            >
+              <h3 class="text-xl font-bold text-gray-800">Обувь</h3>
+              <p class="text-sm text-gray-500 mb-4">Штангетки</p>
+              <img
+                src="./img/shoes.svg"
+                alt="Штангетки"
+                class="w-full h-40 object-contain rounded-lg"
+              />
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 0.8s"
+            >
+              <h3 class="text-xl font-bold text-gray-800">Инвентарь</h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Магнезия для гиревого спорта
+              </p>
+              <img
+                src="./img/Inventory.svg"
+                alt="Магнезия"
+                class="w-full h-40 object-contain rounded-lg"
+              />
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 1s"
+            >
+              <h3 class="text-xl font-bold text-gray-800">Экипировка</h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Ремни для гиревого спорта и тяжелоатлетические
+              </p>
+              <img
+                src="./img/Equipment.svg"
+                alt="Ремень"
+                class="w-full h-40 object-contain rounded-lg"
+              />
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer opacity-0 animate-fadeUp"
+              style="animation-delay: 1.2s"
+            >
+              <h3 class="text-xl font-bold text-gray-800">Маски</h3>
+              <p class="text-sm text-gray-500 mb-4">
+                Медицинские с готовым и индивидуальным дизайном
+              </p>
+              <img
+                src="./img/image 11.svg"
+                alt="Маска"
+                class="w-full h-40 object-contain rounded-lg"
               />
             </div>
           </div>
 
-          <p class="text-xs text-gray-500 mt-4">
-            *акция действительна до 03.05.22
-          </p>
+          <!-- Team Uniform Block -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-sm flex flex-col md:flex-row items-center gap-6 opacity-0 animate-fadeUp"
+            style="animation-delay: 1.4s"
+          >
+            <!-- Text Content -->
+            <div class="md:w-1/2 space-y-4">
+              <h2 class="text-xl font-bold text-gray-800">
+                Командная форма на заказ
+              </h2>
+              <p class="text-sm text-gray-600">
+                Разрабатываем дизайн и шьем на заказ футбольную, волейбольную,
+                гиревую форму, а также тяжелоатлетические костюмы и
+                гимнастические купальники.
+              </p>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• Нанесения логотипа</li>
+                <li>• Печать номера и фамилии</li>
+                <li>• Разработка дизайна формы</li>
+              </ul>
+              <button
+                class="mt-4 px-5 py-2 bg-gray-200 rounded-full hover:bg-gray-300 transition-colors duration-300 cursor-pointer text-sm font-medium"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2 flex justify-center">
+              <img
+                src="./img/Custom team uniforms.svg"
+                alt="Командная форма"
+                class="w-full max-w-[250px] h-auto object-contain rounded-lg"
+              />
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="flex justify-center mt-6 space-x-2 animate-fadeInUp">
-        <div class="w-3 h-3 bg-white border border-gray-400 rounded-full"></div>
-        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
-        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
-      </div>
+        <!-- Animations -->
+        <style>
+          @keyframes fadeUp {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes fadeDown {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeUp {
+            animation: fadeUp 0.8s ease-out forwards;
+          }
+
+          .animate-fadeDown {
+            animation: fadeDown 0.8s ease-out forwards;
+          }
+        </style>
+      </section>
     </main>
-
-    <style>
-      @keyframes fadeInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .animate-fadeInLeft {
-        animation: fadeInLeft 1s ease-out forwards;
-      }
-
-      .animate-fadeInUp {
-        animation: fadeInUp 1s ease-out forwards;
-      }
-
-      .animate-fadeInDown {
-        animation: fadeInDown 1s ease-out forwards;
-      }
-    </style>
   </body>
 </html>
