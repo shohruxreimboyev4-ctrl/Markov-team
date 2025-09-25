@@ -133,5 +133,120 @@
         </div>
       </div>
     </header>
+
+    <!-- Hero Section -->
+    <main class="bg-[#eaeaea] py-10 px-4 md:px-6 overflow-hidden">
+      <div
+        class="container mx-auto max-w-[1200px] flex flex-col md:flex-row items-center gap-8"
+      >
+        <div class="md:w-1/2 space-y-4 animate-fadeInLeft">
+          <h1 class="text-5xl md:text-7xl font-bold leading-none text-black">
+            3=2
+          </h1>
+          <p class="text-lg md:text-5xl font-normal text-black">
+            Закажи три футболки,<br />а заплати только за две
+          </p>
+          <button
+            class="mt-6 px-6 py-3 rounded-full transition-colors duration-300 cursor-pointer text-lg font-medium animate-fadeInUp"
+            style="background: #c4c4c4"
+            onmouseover="this.style.background='#a9a9a9';"
+            onmouseout="this.style.background='#c4c4c4';"
+          >
+            Перейти в каталог
+          </button>
+        </div>
+
+        <div
+          class="md:w-1/2 flex flex-col items-center relative animate-fadeInDown"
+        >
+          <div
+            class="relative w-full max-w-md h-80 flex items-end justify-center"
+          >
+            <div class="absolute left-0 top-6 z-0 w-40 md:w-52 h-auto">
+              <img
+                src="./img/image 2 (2).svg"
+                alt="Черная футболка"
+                class="w-full h-auto object-cover rounded-lg shadow-sm"
+              />
+            </div>
+
+            <div class="absolute right-0 top-6 z-0 w-40 md:w-52 h-auto">
+              <img
+                src="./img/image 4 (2).svg"
+                alt="Черная футболка"
+                class="w-full h-auto object-cover rounded-lg shadow-sm"
+              />
+            </div>
+
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 bottom-0 z-10 w-48 md:w-60 h-auto"
+            >
+              <img
+                src="./img/image 3 (2).svg"
+                alt="Белая футболка"
+                class="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+
+          <p class="text-xs text-gray-500 mt-4">
+            *акция действительна до 03.05.22
+          </p>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-6 space-x-2 animate-fadeInUp">
+        <div class="w-3 h-3 bg-white border border-gray-400 rounded-full"></div>
+        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+      </div>
+    </main>
+
+    <style>
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInLeft {
+        animation: fadeInLeft 1s ease-out forwards;
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      .animate-fadeInDown {
+        animation: fadeInDown 1s ease-out forwards;
+      }
+    </style>
   </body>
 </html>
