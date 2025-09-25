@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markov-team</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-KN9xjAf8rXwG1kxT2Hq6IwBzqcnGm+i0F1E4hFJr+uT+KwJQPoV4Sx0m+UUNb0v8qFJAtv4lYzB0ENnTqj7APA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header
+      class="w-full border-b border-gray-200 text-sm font-rubik sticky top-0 z-50 bg-white"
+    >
+      <!-- Top bar -->
+      <div
+        class="max-w-[1200px] mx-auto px-4 py-2 flex flex-col sm:flex-row justify-between items-center gap-2 border-b border-gray-200"
+      >
+        <p>Режим работы: 10.00-20.00</p>
+        <p>
+          Телефон:
+          <a
+            href="tel:84993004949"
+            class="hover:text-orange-500 transition duration-300"
+            >8(499)300-49-49</a
+          >
+          <span
+            class="ml-2 text-orange-500 cursor-pointer hover:opacity-70 transition duration-300"
+            >Заказать обратный звонок</span
+          >
+        </p>
+        <p>
+          Почта:
+          <a
+            href="mailto:info@markov-tram.ru"
+            class="hover:text-orange-500 transition duration-300"
+            >info@markov-tram.ru</a
+          >
+        </p>
+      </div>
+
+      <!-- Middle nav -->
+      <div class="bg-[#eaeaea]">
+        <div
+          class="max-w-[1200px] mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-3"
+        >
+          <nav class="flex flex-wrap justify-center gap-3 md:gap-5">
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >О нас</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >Доставка</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >Оплата</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >Отзывы</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >Вопросы</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >ОПТ</a
+            >
+            <a
+              href="#"
+              class="px-4 py-1 border border-black rounded-full hover:bg-gray-300 transition duration-300 transform hover:scale-105"
+              >Услуги</a
+            >
+          </nav>
+          <div
+            class="flex flex-col items-center md:items-end text-right text-xs"
+          >
+            <span>Язык сайта: EN/RU</span>
+            <a
+              href="tel:84993004949"
+              class="font-bold text-base hover:text-orange-500 transition duration-300"
+              >8(499)300-49-49</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom nav -->
+      <div
+        class="max-w-[1200px] mx-auto px-4 py-3 flex flex-col md:flex-row justify-between items-center gap-3 border-t border-gray-200"
+      >
+        <nav class="flex flex-wrap gap-6 justify-center">
+          <a
+            href="#"
+            class="hover:text-orange-500 transition duration-300 flex items-center gap-1"
+          >
+            Каталог одежды
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <a href="#" class="hover:text-orange-500 transition duration-300"
+            >Экипировка</a
+          >
+          <a href="#" class="hover:text-orange-500 transition duration-300"
+            >Форма под заказ</a
+          >
+        </nav>
+        <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+          <button
+            class="px-5 py-2 rounded-full border border-black bg-[#eaeaea] hover:bg-gray-300 transition duration-300 transform hover:scale-105 cursor-pointer"
+          >
+            Создать свой дизайн
+          </button>
+          <button
+            class="px-5 py-2 rounded-full border border-black flex items-center gap-2 bg-[#eaeaea] hover:bg-gray-300 transition duration-300 transform hover:scale-105 cursor-pointer"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="font-bold">4</span> Корзина
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
