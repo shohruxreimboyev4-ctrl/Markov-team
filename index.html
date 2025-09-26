@@ -836,6 +836,67 @@
           }
         </style>
       </section>
+
+      <section class="py-12 bg-gray-100 animate-fadeInUp">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-normal mb-4 animate-fadeUp delay-100">
+            Остались вопросы?
+          </h2>
+          <p
+            class="text-xl text-gray-700 mb-8 max-w-lg mx-auto animate-fadeUp delay-200"
+          >
+            Заполните форму и менеджер свяжется <br />
+            с вами в ближайшее время.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="px-6 py-3 bg-white text-gray-800 rounded-full font-medium shadow-sm hover:shadow-lg transition-shadow cursor-pointer animate-fadeUp delay-300"
+            >
+              Задать вопрос
+            </button>
+            <button
+              class="px-6 py-3 bg-white text-gray-800 rounded-full font-medium shadow-sm hover:shadow-lg transition-shadow cursor-pointer animate-fadeUp delay-400"
+            >
+              Заказать звонок
+            </button>
+          </div>
+        </div>
+        <style>
+          @keyframes fadeInUp {
+            0% {
+              opacity: 0;
+              transform: translateY(40px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeInUp {
+            animation: fadeInUp 0.9s ease-out forwards;
+          }
+
+          .animate-fadeUp {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+          }
+
+          .delay-100 {
+            animation-delay: 0.1s;
+          }
+          .delay-200 {
+            animation-delay: 0.2s;
+          }
+          .delay-300 {
+            animation-delay: 0.3s;
+          }
+          .delay-400 {
+            animation-delay: 0.4s;
+          }
+        </style>
+      </section>
     </main>
   </body>
 </html>
