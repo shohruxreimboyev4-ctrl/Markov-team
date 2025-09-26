@@ -415,21 +415,16 @@
           }
         </style>
       </section>
-      <!-- Popular Products Section -->
       <section class="py-8 px-4 md:px-6 bg-gray-100">
         <div class="container mx-auto max-w-[1200px]">
-          <!-- Section Title -->
           <h2 class="text-2xl font-bold text-gray-800 mb-6 animate-fadeDown">
             Популярные товары
           </h2>
 
-          <!-- Product Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Product 1: Магнезия жесткая -->
             <div
               class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300 relative animate-fadeUp delay-1"
             >
-              <!-- Badge -->
               <div
                 class="absolute top-2 left-2 bg-gray-200 text-xs px-2 py-1 rounded-full"
               >
@@ -441,7 +436,6 @@
                 Скидка 10%
               </div>
 
-              <!-- Image -->
               <div class="relative w-full h-40 mb-4">
                 <img
                   src="./img/Inventory.svg"
@@ -450,7 +444,6 @@
                 />
               </div>
 
-              <!-- Info -->
               <h3 class="text-sm font-medium text-gray-800 mb-2">
                 Магнезия жесткая
               </h3>
@@ -462,18 +455,15 @@
               </button>
             </div>
 
-            <!-- Product 2: Маска для лица -->
             <div
               class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300 relative animate-fadeUp delay-2"
             >
-              <!-- Badge -->
               <div
                 class="absolute top-2 left-2 bg-gray-200 text-xs px-2 py-1 rounded-full"
               >
                 Бесплатная доставка
               </div>
 
-              <!-- Image -->
               <div class="relative w-full h-40 mb-4">
                 <img
                   src="./img/image 15 (1).svg"
@@ -482,7 +472,6 @@
                 />
               </div>
 
-              <!-- Info -->
               <h3 class="text-sm font-medium text-gray-800 mb-2">
                 Маска для лица
               </h3>
@@ -494,18 +483,15 @@
               </button>
             </div>
 
-            <!-- Product 3: Женская футболка -->
             <div
               class="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300 relative animate-fadeUp delay-3"
             >
-              <!-- Badge -->
               <div
                 class="absolute top-2 right-2 bg-gray-200 text-xs px-2 py-1 rounded-full"
               >
                 Скидка 10%
               </div>
 
-              <!-- Image -->
               <div class="relative w-full h-40 mb-4">
                 <img
                   src="./img/image 16.svg"
@@ -514,7 +500,6 @@
                 />
               </div>
 
-              <!-- Info -->
               <h3 class="text-sm font-medium text-gray-800 mb-2">
                 Женская футболка...
               </h3>
@@ -527,9 +512,94 @@
             </div>
           </div>
         </div>
+
+        <style>
+          @keyframes fadeUp {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes fadeDown {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          .animate-fadeUp {
+            animation: fadeUp 0.8s ease-out forwards;
+          }
+
+          .animate-fadeDown {
+            animation: fadeDown 0.8s ease-out forwards;
+          }
+
+          .delay-1 {
+            animation-delay: 0.2s;
+          }
+          .delay-2 {
+            animation-delay: 0.4s;
+          }
+          .delay-3 {
+            animation-delay: 0.6s;
+          }
+        </style>
       </section>
+
+      <section class="w-full py-12">
+        <div
+          class="container max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden"
+        >
+          <!-- Left (Images) -->
+          <div class="flex justify-center items-end gap-6 md:w-1/2 w-full p-6">
+            <!-- Pants -->
+            <img
+              src="./img/pants.svg"
+              alt="Pants"
+              class="w-[120px] md:w-[160px] object-contain"
+              style="animation: fadeIn 1s ease-in-out"
+            />
+            <!-- Shirt -->
+            <img
+              src="./img/gray-shirt.svg"
+              alt="Shirt"
+              class="w-[160px] md:w-[220px] object-contain mt-[-20px] md:mt-[-30px]"
+              style="animation: fadeIn 1s ease-in-out 0.2s"
+            />
+          </div>
+
+          <!-- Right (Text + Button) -->
+          <div class="md:w-1/2 w-full text-center md:text-left p-6 space-y-4">
+            <h2 class="text-xl md:text-2xl font-bold">
+              Не нашли подходящий товар?<br />Создайте его сами.
+            </h2>
+            <p class="text-gray-600">
+              Воспользуйтесь нашим онлайн-конструктором одежды <br> и создайте товар
+              на свой вкус. <br> Вы можете добавить фото, текст или принт. <br> А мы
+              реализуем вашу идею и напечатаем дизайн на одежде.
+            </p>
+            <button
+              class="px-6 py-3 bg-gray-100 rounded-full shadow-md hover:bg-black hover:text-white cursor-pointer transition-all duration-300"
+              style="animation: bounceSlow 2s infinite"
+            >
+              Создать в конструкторе
+            </button>
+          </div>
+        </div>
+      </section>
+
       <style>
-        @keyframes fadeUp {
+        @keyframes fadeIn {
           0% {
             opacity: 0;
             transform: translateY(20px);
@@ -539,34 +609,14 @@
             transform: translateY(0);
           }
         }
-
-        @keyframes fadeDown {
-          0% {
-            opacity: 0;
-            transform: translateY(-20px);
-          }
+        @keyframes bounceSlow {
+          0%,
           100% {
-            opacity: 1;
-            transform: translateY(0);
+            transform: translateY(-3px);
           }
-        }
-
-        .animate-fadeUp {
-          animation: fadeUp 0.8s ease-out forwards;
-        }
-
-        .animate-fadeDown {
-          animation: fadeDown 0.8s ease-out forwards;
-        }
-
-        .delay-1 {
-          animation-delay: 0.2s;
-        }
-        .delay-2 {
-          animation-delay: 0.4s;
-        }
-        .delay-3 {
-          animation-delay: 0.6s;
+          50% {
+            transform: translateY(3px);
+          }
         }
       </style>
     </main>
