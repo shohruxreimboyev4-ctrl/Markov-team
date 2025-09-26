@@ -560,16 +560,13 @@
         <div
           class="container max-w-[1200px] mx-auto px-4 flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-md overflow-hidden"
         >
-          <!-- Left (Images) -->
           <div class="flex justify-center items-end gap-6 md:w-1/2 w-full p-6">
-            <!-- Pants -->
             <img
               src="./img/pants.svg"
               alt="Pants"
               class="w-[120px] md:w-[160px] object-contain"
               style="animation: fadeIn 1s ease-in-out"
             />
-            <!-- Shirt -->
             <img
               src="./img/gray-shirt.svg"
               alt="Shirt"
@@ -578,21 +575,129 @@
             />
           </div>
 
-          <!-- Right (Text + Button) -->
           <div class="md:w-1/2 w-full text-center md:text-left p-6 space-y-4">
             <h2 class="text-xl md:text-2xl font-bold">
               Не нашли подходящий товар?<br />Создайте его сами.
             </h2>
             <p class="text-gray-600">
-              Воспользуйтесь нашим онлайн-конструктором одежды <br> и создайте товар
-              на свой вкус. <br> Вы можете добавить фото, текст или принт. <br> А мы
-              реализуем вашу идею и напечатаем дизайн на одежде.
+              Воспользуйтесь нашим онлайн-конструктором одежды <br />
+              и создайте товар на свой вкус. <br />
+              Вы можете добавить фото, текст или принт. <br />
+              А мы реализуем вашу идею и напечатаем дизайн на одежде.
             </p>
             <button
               class="px-6 py-3 bg-gray-100 rounded-full shadow-md hover:bg-black hover:text-white cursor-pointer transition-all duration-300"
               style="animation: bounceSlow 2s infinite"
             >
               Создать в конструкторе
+            </button>
+          </div>
+        </div>
+        <style>
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          @keyframes bounceSlow {
+            0%,
+            100% {
+              transform: translateY(-3px);
+            }
+            50% {
+              transform: translateY(3px);
+            }
+          }
+        </style>
+      </section>
+
+      <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-normal mb-8 ">
+            Примеры наших работ:
+          </h2>
+
+          <div class="flex items-center justify-between gap-4">
+            <button
+              class="p-3 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer"
+              style="animation: fadeIn 1s ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="flex overflow-x-auto gap-6 snap-x snap-mandatory scrollbar-hide"
+            >
+              <div
+                class="flex-shrink-0 w-[300px] h-[400px] rounded-xl overflow-hidden shadow-none snap-start"
+                style="animation: fadeIn 1s ease-in-out"
+              >
+                <img
+                  src="./img/Rectangle 10 (1).svg"
+                  alt="Art T-Shirt"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div
+                class="flex-shrink-0 w-[300px] h-[400px] rounded-xl overflow-hidden shadow-none snap-start"
+                style="animation: fadeIn 1s ease-in-out 0.2s"
+              >
+                <img
+                  src="./img/Rectangle 11 (1).svg"
+                  alt="Sport Set"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+
+              <div
+                class="flex-shrink-0 w-[300px] h-[400px] rounded-xl overflow-hidden shadow-none snap-start"
+                style="animation: fadeIn 1s ease-in-out 0.4s"
+              >
+                <img
+                  src="./img/Rectangle 12 (1).svg"
+                  alt="Graphic T-Shirt"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <button
+              class="p-3 bg-gray-200 rounded-full hover:bg-gray-300 cursor-pointer"
+              style="animation: fadeIn 1s ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </button>
           </div>
         </div>
@@ -609,13 +714,14 @@
             transform: translateY(0);
           }
         }
+
         @keyframes bounceSlow {
           0%,
           100% {
-            transform: translateY(-3px);
+            transform: translateY(0);
           }
           50% {
-            transform: translateY(3px);
+            transform: translateY(-6px);
           }
         }
       </style>
