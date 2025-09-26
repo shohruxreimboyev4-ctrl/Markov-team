@@ -618,9 +618,7 @@
 
       <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-normal mb-8 ">
-            Примеры наших работ:
-          </h2>
+          <h2 class="text-3xl font-normal mb-8">Примеры наших работ:</h2>
 
           <div class="flex items-center justify-between gap-4">
             <button
@@ -701,30 +699,143 @@
             </button>
           </div>
         </div>
+        <style>
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes bounceSlow {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-6px);
+            }
+          }
+        </style>
       </section>
 
-      <style>
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+      <section class="py-12 bg-white">
+        <div class="max-w-[1200px] mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-start mb-12 animate-fadeIn">
+            Что вы получаете выбирая нас:
+          </h2>
 
-        @keyframes bounceSlow {
-          0%,
-          100% {
-            transform: translateY(0);
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp"
+            >
+              <h3 class="text-xl font-medium mb-2">Высокое качество</h3>
+              <p class="text-gray-700">
+                Каждое изделие кроится, отшивается и проверяется вручную.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp delay-100"
+            >
+              <h3 class="text-xl font-medium mb-2">Гарантию</h3>
+              <p class="text-gray-700">
+                Мы гарантируем, что наши изделия выдержат 50 стирок* и не
+                потеряют цвет и форму.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp delay-200"
+            >
+              <h3 class="text-xl font-medium mb-2">Точность размера</h3>
+              <p class="text-gray-700">
+                Размеры соответствуют размерной сетке, т.к. отшиваются по
+                собственным лекалам.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp delay-300"
+            >
+              <h3 class="text-xl font-medium mb-2">Помощь дизайнера</h3>
+              <p class="text-gray-700">
+                Помощь в разработке дизайна, доработка существующего макета.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp delay-400"
+            >
+              <h3 class="text-xl font-medium mb-2">Быстрая доставка</h3>
+              <p class="text-gray-700">
+                Доставляем по всему миру, отправка вашего заказа в течение 1
+                дня.
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow animate-fadeUp delay-500"
+            >
+              <h3 class="text-xl font-medium mb-2">Сервис</h3>
+              <p class="text-gray-700">
+                Лёгкий процесс оплаты, обмена и возврата заказа.
+              </p>
+            </div>
+          </div>
+        </div>
+        <style>
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: scale(0.95);
+            }
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
           }
-          50% {
-            transform: translateY(-6px);
+
+          @keyframes fadeUp {
+            0% {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
           }
-        }
-      </style>
+
+          .animate-fadeIn {
+            animation: fadeIn 1s ease forwards;
+          }
+
+          .animate-fadeUp {
+            animation: fadeUp 0.8s ease forwards;
+          }
+
+          .delay-100 {
+            animation-delay: 0.1s;
+          }
+          .delay-200 {
+            animation-delay: 0.2s;
+          }
+          .delay-300 {
+            animation-delay: 0.3s;
+          }
+          .delay-400 {
+            animation-delay: 0.4s;
+          }
+          .delay-500 {
+            animation-delay: 0.5s;
+          }
+        </style>
+      </section>
     </main>
   </body>
 </html>
